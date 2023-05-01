@@ -1,0 +1,102 @@
+:root{
+    --laranja: #ffa600;
+    --branco: #ffffff;
+    --preto: #212121;
+
+    --bg-color: #ffa600;
+    --border-color: #ffffff;
+    --font-color: #ffffff;
+}
+
+body{
+    background-color: var(--bg-color);
+    height: 100%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.wrapper{
+    width: 60%;
+    margin: auto;
+    color: var(--font-color);
+    text-align: center;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+button{
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    border: solid 2px var(--border-color);
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.flex-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button:hover{
+    font-weight: 600;
+    transition: 0.5s;
+    background-color: var(--border-color);
+    border: solid 2px var(--border-color);
+    color: var(--bg-color);
+}
+
+@media (min-width: 1024px) {
+    h1{
+        font-size: 4em;
+    }
+    p{
+        font-size: 4em;
+    }
+    button{
+        width: 320px;
+        padding: 25px;
+        font-size: 1.5em;
+    }
+    .flex-buttons{
+        gap: 35px;
+    }
+}
+
+@media (max-width: 1024px) {
+    h1{
+        font-size: 4em;
+    }
+    p{
+        font-size: 5em;
+    }
+    button{
+        width: 245px;
+        font-size: 1.8em;
+        padding: 18px;
+    }
+    .flex-buttons{
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper{
+        width: 80%;
+    }
+    h1{
+        font-size: 3.5em;
+    }
+    button{
+        width: 300px;
+        padding: 25px;
+        font-size: 2.2em;
+    }
+    .flex-buttons{
+        flex-direction: column;
+    }
+}
